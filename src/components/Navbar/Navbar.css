@@ -1,0 +1,187 @@
+.boxnav {
+    height: 75px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 20px 10px #0000001a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: sticky;
+    top:0;
+}
+
+.boxnav .group {
+
+    height: 75px;
+    left: 0;
+    top: 0;
+    width: 90%;
+}
+
+.boxnav .overlap-group {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px 10px 0px 0px;
+    height: 75px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.boxnav .icon {
+    cursor: pointer;
+    height: 65px;
+    width: 65px;
+}
+
+.boxnav .navbar {
+    align-items: center;
+    display: inline-flex;
+    gap: 64px;
+    justify-content: center;
+}
+
+.boxnav .text-wrapper {
+    color: #1a363e;
+    font-family: "Fira Sans-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.boxnav .div {
+    cursor: pointer;
+    color: #1a363e;
+    font-family: "Fira Sans-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+}
+
+.boxnav .frame {
+    align-items: center;
+    display: inline-flex;
+    gap: 64px;
+    justify-content: center;
+}
+
+.boxnav .text-wrapper-2 {
+    cursor: pointer;
+    color: #4ab943;
+    font-family: "Fira Sans-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+    width: fit-content;
+}
+
+.boxnav .vector {
+    cursor: pointer;
+    height: 24px;
+    position: relative;
+    width: 16px;
+}
+
+.boxnav .img {
+    cursor: pointer;
+    height: 24px;
+    position: relative;
+    width: 24px;
+}
+
+.overlap-group .toggle_btn {
+    color: #1a363e;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.dropdown_menu.open {
+    height: 340px;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a363e;
+    font-family: "Fira Sans-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+
+}
+
+@media(max-width:1200px) {
+    .overlap-group .navbar {
+        display: none;
+    }
+
+    .overlap-group .frame {
+        display: none;
+    }
+
+    .overlap-group .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media(max-width:576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+.view {
+    z-index: 1000;
+}

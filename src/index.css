@@ -1,0 +1,21 @@
+body {
+  background: #ffffff no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#root {
+  background-color: #f8f8f8;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
